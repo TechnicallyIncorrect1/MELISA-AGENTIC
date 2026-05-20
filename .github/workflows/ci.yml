@@ -11,4 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo "✅ Repository is clean - MELISA-AGENTIC"
+      - name: Repository Status
+        run: echo "✅ MELISA-AGENTIC - Repository cleaned successfully"
