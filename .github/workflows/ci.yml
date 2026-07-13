@@ -1,5 +1,4 @@
 ﻿name: CI
-
 on:
   push:
     branches: [ main ]
@@ -7,9 +6,9 @@ on:
     branches: [ main ]
 
 jobs:
-  status:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Repository Status
-        run: echo "✅ MELISA-AGENTIC - Repository cleaned successfully"
+    - uses: actions/checkout@v4
+    - name: MELISA Status
+      run: echo "✅ MELISA-AGENTIC listo para ejecución"
